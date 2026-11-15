@@ -1,5 +1,4 @@
 package com.choongang;
-import java.util.*;
 
 public class Q_GetAllElementsButNth {
     public int[] getAllElementsButNth(int[] arr, int n) {
@@ -8,9 +7,9 @@ public class Q_GetAllElementsButNth {
         if(arr.length == 0) {
             result = new int[0];
         }
-        // arr.length보다 n이 크다면 arr를 그대로 반환
-        else if(arr.length < n) {
-            result = Arrays.copyOf(arr, arr.length);
+        // n이 arr.length 이상이면 뺄 요소가 없으므로 arr를 그대로 반환
+        else if(n >= arr.length) {
+            result = arr;
         } else {
 //            // arr = [1, 2, 3, 4, 5, 6]
 //            // n = 2라면

@@ -23,10 +23,10 @@ public class J_AddToFront {
             // arr[1] -> result[2]로 들어와야 합니다.
             // 즉, arr[i]가 result[i + 1]에 할당해야 합니다.
             // 반복문으로 arr를 순회하면서 result[i+1]의 위치에 arr[i]를 할당
-//        for(int i = 0; i < arr.length; i++) {
-//            result[i + 1] = arr[i];
-//        }
-        System.arraycopy(arr, 0, result, 1, arr.length);
+        for(int i = 0; i < arr.length; i++) {
+            result[i + 1] = arr[i];
+        }
+        // 참고: 위의 반복문은 System.arraycopy(arr, 0, result, 1, arr.length); 한 줄로도 쓸 수 있습니다.
 
         // result 반환
         return result;

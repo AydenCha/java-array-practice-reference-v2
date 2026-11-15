@@ -1,6 +1,5 @@
 package com.choongang;
 
-import java.util.Arrays;
 
 public class E_GetAllWords {
     public String[] getAllWords(String str) {
