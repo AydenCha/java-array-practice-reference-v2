@@ -10,7 +10,7 @@ class G_GetLargestElementTest {
     G_GetLargestElement test = new G_GetLargestElement();
 
     @Test
-    @DisplayName("[2, 5, 4, 9, 8]을(를) 입력받은 경우, 9을(를) 리턴해야 합니다")
+    @DisplayName("[2, 5, 4, 9]을(를) 입력받은 경우, 9을(를) 리턴해야 합니다")
     void getLargestElement() {
         int[] arr = new int[]{2, 5, 4, 9, };
         assertThat(test.getLargestElement(arr)).isEqualTo(9);
